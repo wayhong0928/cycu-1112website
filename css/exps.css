@@ -1,0 +1,124 @@
+#exps {
+  height: 100%;
+  display: block;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 10px 10px #ccc;
+}
+#exps .title {
+  position: relative;
+  width: 100%;
+  height: 140px;
+}
+#exps .title span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  left: -60px;
+  width: 600px;
+  height: 80px;
+  background-color: #c9bc99;
+  box-shadow: 15px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+}
+#exps .title span::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 40px;
+  height: 60px;
+  background-color: #b8ab89;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+#exps .title span::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 35px;
+  height: 80px;
+  z-index: -1;
+  background-color: #c9bc99;
+}
+#exps .title span i {
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 30px;
+  color: #eee;
+  text-shadow: 3px 3px 1px #ccc;
+  transform: scale(1);
+  transition: 0.5s;
+}
+#exps .title span i:hover {
+  transform: scale(1.2);
+  letter-spacing: 40px;
+  transition: 0.5s;
+}
+.exps-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.exps-item .pic {
+  width: 55%;
+}
+.exps-item .pic img {
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: 0 0 3px 3px #aaa;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.exps-item .pic img:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  border-radius: 50px;
+  box-shadow: 0 0 5px 5px #aaa;
+}
+.exps-text {
+  width: 55%;
+  background-color:rgba(232, 223, 202,0.6);
+  padding: 50px 30px;
+  text-align: center;
+  z-index: 1;
+  border-radius: 30px;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.exps-text:hover {
+  transform: scale(1.05);
+  background-color:rgba(232, 223, 202,1);
+  border: 1px solid #333;
+  transition: 0.5s;
+}
+.exps-item h2 {
+  font-weight: 700;
+  font-size: 28px;
+  padding-bottom: 20px;
+  letter-spacing: 10px;
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.exps-text:hover h2 {
+  font-size: 32px;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.exps-item p {
+  text-align: justify;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.exps-text:hover P {
+  transform: scale(1.05); 
+  transition: 0.5s;
+}
+.exps-item > :first-child {
+  margin-right: -10%;
+}
