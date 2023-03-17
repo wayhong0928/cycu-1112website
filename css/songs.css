@@ -1,0 +1,75 @@
+.songs-item {
+  position: relative;
+  margin: 0 15px;
+  width: 360px;
+  height: 270px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px 3px #ccc;
+  transform: translateY(0px);
+  transition: 0.5s;
+}
+.songs-item:hover {
+  transform: translateY(-50px);
+  transition: 0.5s;
+}
+.songs-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.songs-text, .drop-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 0;
+  padding: 20px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  text-align: justify;
+  transition: 0.5s;
+}
+.songs-text {
+  width: 100%;
+  top: 0;
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0;
+}
+.songs-item:hover .songs-text {
+  opacity: 1;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.drop-text {
+  top: 50%;
+  z-index: -1;
+  transform: translateY(0px);
+  transition: 0.5s;
+}
+.songs-item:hover .drop-text {
+  z-index: 1;
+  transition: 0.5s;
+  transform: translateY(150px);
+}
+/* 效果線條 */
+.songs-text h3 {
+  font-size: 20px;
+  color: #ff0;
+}
+.songs-text h3::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin: 10px 0;
+  background-color: #ff0;
+  transition: 0.5s 0.3s;
+}
+.songs-item:hover h3::after {
+  width: 100%;
+}
+.songs-text p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+}
