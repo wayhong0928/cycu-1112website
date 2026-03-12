@@ -96,19 +96,7 @@ CYCU-Resume(1112)/
    直接在瀏覽器中開啟 index.html 即可瀏覽
    ```
 
-2. **本地伺服器** （建議）
-
-   ```bash
-   # 使用 Python 啟動簡易伺服器
-   python -m http.server 8000
-
-   # 或使用 Node.js（需安裝 http-server）
-   npx http-server
-   ```
-
-   然後在瀏覽器打開 `http://localhost:8000`
-
-3. **瀏覽導覽**
+2. **瀏覽導覽**
    - 點擊頁面頂部導覽列切換不同頁面
    - 首頁有隱藏彩蛋連結通往五月天歌詞頁面 🎵
 
@@ -128,6 +116,11 @@ CYCU-Resume(1112)/
 
 Copyright &copy; CYCU-1112-網路程式設計作業 by wayhong
 
+## 更新紀錄
+
+- 2026/03：更新 Readme
+- 2023-03：從多媒體的一頁式網頁改寫成多頁的版本:D
 ---
 
 _「相信祝福不會因堆疊的時光消逝。」_
+
